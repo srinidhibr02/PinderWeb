@@ -1,0 +1,7 @@
+{
+  "name": "PinderWeb",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
