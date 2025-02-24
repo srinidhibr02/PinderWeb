@@ -1,0 +1,21 @@
+/* Make sure ion-app takes up the full height */
+ion-app {
+  height: 100vh; /* Full viewport height */
+  display: block;
+}
+
+/* Ensure ion-content takes up the full height and becomes scrollable */
+ion-content {
+  height: 100%;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Optionally, you can add padding for better visuals */
+ion-header, ion-footer {
+  padding: 0;
+}
+
+/* Optional styling: Add space for content between header and footer */
+ion-router-outlet {
+  padding: 16px;
+}
