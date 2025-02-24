@@ -3,7 +3,7 @@
     <a routerLink="/" class="navbar-brand">
       <div class="title-container">
         <ion-avatar slot="start">
-          <img src="../../assets/Pinder Assets/P-only logo.png" width=20 />
+          <img src="../../assets/Pinder Assets/P-only logo.png"/>
         </ion-avatar>
         <ion-text>
           <span class="title-main">PINDER</span>
@@ -19,19 +19,19 @@
     <div id="navbarSupportedContent" [ngClass]="{ collapse: collapsed, 'navbar-collapse': true }">
       <ul class="navbar-nav ms-auto me-4">
         <li class="nav-item">
-          <a routerLink="/welcome" class="nav-link" routerLinkActive="homeActive" > Pet Parents </a>
+          <a routerLink="/home" class="nav-link" routerLinkActive="homeActive" #home="routerLinkActive"> Home </a>
         </li>
         <li class="nav-item" >
-          <a routerLink="/about" class="nav-link" routerLinkActive="aboutActive"> Market Place </a>
+          <a routerLink="/about" class="nav-link" routerLinkActive="aboutActive" #about="routerLinkActive"> About </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/product" class="nav-link" routerLinkActive="productActive"> About Us </a>
+          <a routerLink="/product" class="nav-link" routerLinkActive="productActive" #product="routerLinkActive"> Products </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/contact" class="nav-link" routerLinkActive="contactActive"> Partnership</a>
+          <a routerLink="/contact" class="nav-link" routerLinkActive="contactActive" #contact="routerLinkActive"> Contact</a>
         </li>
       </ul>
-      <button class="btn" routerLink="/contact">Contact Us!</button>
+      <button class="btn" routerLink="/contact">Sign Up</button>
     </div>
   </div>
 </nav>
