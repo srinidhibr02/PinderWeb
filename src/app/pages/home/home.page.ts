@@ -3,15 +3,15 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import Typed from 'typed.js';
 import { TypedDirective } from 'src/app/directives/type-effect.directive';
+import { IonGrid, IonRow, IonCol, IonImg, IonContent } from "@ionic/angular/standalone";
 import { HeaderComponent } from "../../components/header/header.component";
-import { FooterComponent } from "../../components/footer/footer.component";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
   standalone: true,
-  imports: [CommonModule, FormsModule, TypedDirective]
+  imports: [IonContent, IonImg, IonCol, IonRow, IonGrid, CommonModule, FormsModule, HeaderComponent]
 })
 export class HomePage implements OnInit {
   strings:Array<string>

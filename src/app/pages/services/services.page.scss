@@ -1,0 +1,60 @@
+*{
+    font-family: 'myFont',Georgia, 'Times New Roman', Times, serif;
+    //border: 1px solid black;
+    box-sizing: border-box;
+}
+  
+.context {
+    display: flex;
+    align-items: center;      // Vertically center the content inside the column
+    height: 100%;             // Ensure it takes up the full height of the parent
+  }
+  
+  .context-col {
+    display: flex;
+    flex-direction: column;   // Stack items (text + avatar) vertically
+    justify-content: center;  // Center items vertically inside the column
+  }
+  
+.pet-header1, .pet-header2{
+    font-size: 6vw;
+}   
+  .pet-header1 {
+    display: flex;
+    align-items: center;     /* Vertically align the text and avatar */
+  }
+  
+  .avatar-inline {
+    display: inline-block; /* Ensure avatar stays inline with the text */
+    margin: 0 10px;        /* Add space between the text and avatar */
+    height: 100px;
+    width: auto;
+  }
+  
+  .pet-header2 {
+    span{
+        text-align: left;
+        display: block;
+        ion-icon{
+            color: var(--theme-color);
+            transform: rotate(25deg);      
+        }
+    }
+  }
+  ion-button{
+    width: 20vw;
+    justify-content: center;
+    ion-icon{
+      --color:var(--theme-color);
+    }
+    --color: var(--theme-color);
+    margin-top: 10px;
+    --border-color: var(--theme-color);
+  }
+  ion-button:hover{
+    --background: var(--theme-color);
+    --color: white;
+  }
+
+    
+  

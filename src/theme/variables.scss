@@ -1,2 +1,11 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+:root{
+  --theme-color: rgb(255, 60, 116);
+  --light-theme-color:  rgba(255, 60, 115, 0.75);
+}
+
+@font-face {
+  font-family: 'myFont';
+  src: url('https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKew72j00.woff2') format('woff2');
+}

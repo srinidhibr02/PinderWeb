@@ -1,4 +1,3 @@
-
 .text-small {
   font-size: 0.9rem;
   font-weight: lighter;
@@ -17,13 +16,18 @@ a:focus {
 }
 
 
-footer {
-  background: #212529;
-}
-
-.head{
+.head {
   color: rgb(255, 60, 116);
   font-weight: bold;
   font-size: 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subscribe {
+  ion-icon{
+    --color: rgb(255, 60, 116);
+  }
+  --color: rgb(255, 60, 116);
+  margin-top: 10px;
+  --border-color: rgb(255, 60, 116);
 }
