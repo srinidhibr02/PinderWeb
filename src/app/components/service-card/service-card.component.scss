@@ -1,0 +1,49 @@
+@use 'swiper/css' as swiper;
+
+.container{
+  margin: 0;
+  padding: 0;
+    width: 73vw;
+    overflow: hidden;
+}
+.swiper-container{
+    position: relative;
+    width: 80%;
+}
+.swiper-wrapper{
+    width: 80%;
+}
+.blurry-slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+}
+.blurry-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;  /* Use the same background image */
+    filter: blur(2px);/* Apply the blur effect */
+    z-index: -1;          /* Place the blurry background behind the content */
+  }
+
+  .card{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+  }
+  .title{
+    // border: 1px solid white;
+    display: flex;
+    align-items: center;
+    // vertical-align: middle;
+    font-size: 2rem;
+    margin: auto;
+    color: white;
+  }
+

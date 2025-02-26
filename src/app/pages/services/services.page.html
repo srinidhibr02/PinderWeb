@@ -16,7 +16,8 @@
         <h4>
           <span>Training, Grooming to nutrition & exercise there's caring worth often becomes the family </span>
         </h4>
-        <ion-button shape="round" fill="outline" size="default" expand="block">
+        <ion-button shape="round" fill="outline" size="default" expand="block"
+          (click)="scrollToContent('exploreFeatures')">
           Get Started | <ion-icon name="paw-outline"></ion-icon>
         </ion-button>
       </ion-col>
@@ -26,10 +27,62 @@
         </ion-img>
       </ion-col>
     </ion-row>
+    <hr />
+    <ion-row id="exploreFeatures">
+      <ion-col>
+        <h1 class="pet-header2">
+          Explore our features
+        </h1>
+        <h4>
+          <span>Training, Grooming to nutrition & exercise there's caring worth often becomes the family </span>
+        </h4>
+      </ion-col>
+    </ion-row>
     <ion-row class="context">
       <ion-col class="contextCol">
-        
-
+        <app-service-card></app-service-card>
+      </ion-col>
+    </ion-row>
+    <br />
+    <ion-row class="weCare">
+      <ion-col class="weCareCol col1">
+        <ion-avatar>
+          <ion-img src="../../../assets/pet svgs/dogface.jpg"></ion-img>
+        </ion-avatar>
+        <span class="care-heading">What we care the most?</span>
+        <p><span class="care-pinder">PINDER-</span> is designed to be the ultimate companion for pet parents, offering a variety of features to ensure the health, happiness, and well-being of your furry friends.</p>
+      </ion-col>
+      <ion-col class="weCareCol">
+        <p>
+          Clients Testimonials
+          <span class="care-heading" style="text-align: center;">-01</span>
+        </p>
+        <hr/>
+        <p>
+          <span class="markHighlight">&nbsp;"</span><br/>
+          Thank you for your patience to make a community for pet parents. It is definately a great work indeed. Keep up the good work on adding more features to this application.
+        </p>
+        <hr/>
+        <p>
+          <span class="care-heading">Sanjay N K</span>
+          Automobile Engineer
+        </p>
+      </ion-col>
+      <ion-col class="weCareCol col3">
+       <p style="text-align: center;">
+        <ion-img class="neverMissImg" src="../../../assets/petreal/cat-8197577_1280.jpg"></ion-img>
+        <span class="care-heading">Never miss a moment!</span>
+      </p>
+      <hr/>
+      
+          <p style="text-align: center;">
+            We will be available soon....
+          </p>
+          <ion-button class="downloadButton" fill="outline">
+            &nbsp; <ion-icon name="logo-apple-appstore"></ion-icon>|&nbsp;
+            Download 
+            &nbsp;|&nbsp; <ion-icon name="logo-google-playstore"></ion-icon>
+          </ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

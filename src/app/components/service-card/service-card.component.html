@@ -1,0 +1,18 @@
+<div class="container">
+  
+  <div #swiperContainer class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide blurry-slide" 
+      [ngStyle]="{'background-image': 'url(' + service.imageUrl + ')'}"
+      *ngFor="let service of whatWeProvide">
+        <ion-card class="card">
+          
+              <span  class="title">{{service.title}}</span>
+           
+        </ion-card>
+      </div>
+    </div>
+
+  </div>
+
+</div>

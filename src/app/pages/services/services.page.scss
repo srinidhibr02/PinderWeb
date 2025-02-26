@@ -1,60 +1,116 @@
-*{
-    font-family: 'myFont',Georgia, 'Times New Roman', Times, serif;
-    //border: 1px solid black;
-    box-sizing: border-box;
+* {
+  font-family: 'myFont', Georgia, 'Times New Roman', Times, serif;
+  // border: 1px solid black;
+  box-sizing: border-box;
 }
-  
+
 .context {
-    display: flex;
-    align-items: center;      // Vertically center the content inside the column
-    height: 100%;             // Ensure it takes up the full height of the parent
-  }
-  
-  .context-col {
-    display: flex;
-    flex-direction: column;   // Stack items (text + avatar) vertically
-    justify-content: center;  // Center items vertically inside the column
-  }
-  
-.pet-header1, .pet-header2{
-    font-size: 6vw;
-}   
-  .pet-header1 {
-    display: flex;
-    align-items: center;     /* Vertically align the text and avatar */
-  }
-  
-  .avatar-inline {
-    display: inline-block; /* Ensure avatar stays inline with the text */
-    margin: 0 10px;        /* Add space between the text and avatar */
-    height: 100px;
-    width: auto;
-  }
-  
-  .pet-header2 {
-    span{
-        text-align: left;
-        display: block;
-        ion-icon{
-            color: var(--theme-color);
-            transform: rotate(25deg);      
-        }
+  display: flex;
+  align-items: center; // Vertically center the content inside the column
+  height: 100%; // Ensure it takes up the full height of the parent
+}
+
+.context-col {
+  display: flex;
+  flex-direction: column; // Stack items (text + avatar) vertically
+  justify-content: center; // Center items vertically inside the column
+}
+
+.pet-header1,
+.pet-header2 {
+  font-size: 5vw;
+}
+
+.pet-header1 {
+  display: flex;
+  align-items: center;
+  /* Vertically align the text and avatar */
+}
+
+.avatar-inline {
+  display: inline-block;
+  /* Ensure avatar stays inline with the text */
+  margin: 0 10px;
+  /* Add space between the text and avatar */
+  height: 100px;
+  width: auto;
+}
+
+.pet-header2 {
+  span {
+    text-align: left;
+    display: block;
+
+    ion-icon {
+      color: var(--theme-color);
+      transform: rotate(25deg);
     }
   }
-  ion-button{
-    width: 20vw;
-    justify-content: center;
-    ion-icon{
-      --color:var(--theme-color);
-    }
+}
+
+ion-button {
+  width: 20vw;
+  justify-content: center;
+
+  ion-icon {
     --color: var(--theme-color);
-    margin-top: 10px;
-    --border-color: var(--theme-color);
-  }
-  ion-button:hover{
-    --background: var(--theme-color);
-    --color: white;
   }
 
-    
-  
+  --color: var(--theme-color);
+  margin-top: 10px;
+  --border-color: var(--theme-color);
+}
+
+ion-button:hover {
+  --background: var(--theme-color);
+  --color: white;
+}
+.weCare{
+  margin: 2%;
+  padding: 10px;
+  .weCareCol{
+    border: 2px solid black;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+   .col1{
+    border-radius: 15px 0 0 15px;
+  }
+  .col3{
+    border-radius: 0 15px 15px 0;
+  }
+}
+.care-heading{
+  display: block;
+  font-weight: 800;
+  font-size: 2.5rem;
+  padding-bottom: 15px;
+}
+.care-pinder{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.markHighlight{
+  display: inline-block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: var(--theme-color);
+  color: white;
+}
+.neverMissImg{
+  height: auto;
+  width: auto;
+  object-fit: cover;
+}
+
+.downloadButton{
+  --background-color: var(--theme-color);
+  color: var(--theme-color);
+  display: block;
+}
+.downloadButton:hover{
+  color: white;
+}
